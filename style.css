@@ -1,0 +1,132 @@
+
+@font-face{
+    font-family: my-font;
+    src: url(./fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: my-bold-font;
+    src: url(./fonts/roboto/Roboto-Bold.ttf);
+}
+
+body{
+    font-family: my-font;
+    background-color: #ccfbf1;
+    color: #111827;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.container, .icon, .top, .project-icon, .contact, .end-icon, .footer{
+    display: flex;
+}
+
+.works-container, .logo{
+    display: grid;
+}
+
+.header, .body, .name{
+    margin: 60px;
+}
+
+.header{
+    margin-bottom: 5px;
+}
+
+.name, h2, .pj-name{
+    color: #0d3f3c;
+}
+
+.name{
+    margin-bottom: 18px;
+    font-family: my-bold-font;
+}
+
+.header, .body{
+    margin-top: 0;
+}
+
+.pic{
+    float: left;
+    margin: 0 16px 10px 0;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 4px 10px -3px #0000003a;
+}
+
+.about > div, .work, .footer{
+    background-color: #2abbaa7c;
+}
+
+.about > div{
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 40px;
+    
+}
+
+.container{
+    flex-direction: column;
+}
+
+.icon{
+    gap: 18px;
+    justify-content: end;
+    padding-top: 20px;
+
+}
+
+.works-container{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-project{
+    margin: 20px;
+}
+
+.work{
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 14px 10px -3px #0000003a;
+}
+
+.down{
+    margin: 20px 0px 40px 0px ;
+}
+
+.project-icon, .contact{
+    gap: 10px;
+}
+
+.top, .footer{
+    justify-content: space-between;
+}
+
+.pj-name{
+    font-family: my-bold-font;
+    font-size: large;
+}
+
+.footer{
+    padding: 10px 90px 60px 60px;
+    padding-top: 10px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.logo{
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 18px;
+}
+
+.address, .close, .contact{
+    margin-bottom: 24px;
+}
+
+.end-icon{
+    gap: 10px;
+}
